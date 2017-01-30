@@ -1,0 +1,11 @@
+(a) Not including the intial commit, 7 
+
+(b) On Tuesday, January 24 
+
+(c) log shows the entire history of the repository, while status only shows the current changes being made to the repository
+
+(d) Untracked files are files that had not been in the repository, where as unstaged files are files that have not been staged and commited to the repository
+
+(e) Checkout lets you move to a past commit, while reset can potentially delete parts of the current directory
+
+(f) Git will display an error message
