@@ -7,11 +7,18 @@ public class Main {
             int result = addArguments(args);
             System.out.println(result);
         } catch (Exception e) {
-            System.err.println("Please provide two gers to add");
+            System.err.println("Not enough integers were passed");
         }
     }
 
     private static int addArguments(String[] args) {
-        return Integer.valueOf(args[0]) + Integer.valueOf(args[1]);
-    }
+    	if(args.length > 1){
+    		int sum = 0;
+    		for(int count = 0; count < args.length; count++)
+    			sum += Integer.valueOf(args[count]);
+    		return sum;
+    	}
+    	else
+    		return Integer.valueOf(args[-1]);
+    	}
 }
