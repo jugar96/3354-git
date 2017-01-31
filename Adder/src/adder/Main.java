@@ -2,12 +2,16 @@ package adder;
 
 public class Main {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
         try {
             int result = addArguments(args);
             System.out.println(result);
-        } catch (Exception e) {
-            System.err.println("Not enough integers were passed");
+        } 
+        catch (IndexOutOfBoundsException a) {
+        	System.err.println("Not enough arguments were passed");
+        }
+        catch (Exception e) {
+            System.err.println("Invalid characters were passed");
         }
     }
 
